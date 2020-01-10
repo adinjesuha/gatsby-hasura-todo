@@ -4,7 +4,6 @@ import gql from 'graphql-tag'
 export const ADD_TODO = gql`
   mutation addTodo($todo: String!){
     insert_todo( objects:[{
-        user: "user1"
         todo: $todo
       }]){
       returning{

@@ -15,7 +15,7 @@ const Todos = () => {
       >
       {({loading, error, data}) => {
         if(loading) return <p>Loading...</p>
-        if(error) return <p>{error}</p>
+        if(error) return <p>Error...</p>
         if(data.todo.length){
           return data.todo.map(({id, todo, done}) => (
             <Alert key={id} color={done ? "success":"warning"}>
@@ -26,7 +26,7 @@ const Todos = () => {
           ))
         }
         else {
-          return <div> Get some work boy...</div>
+          return <div> Add a new TODO...</div>
         }
       }}
       </Query>
