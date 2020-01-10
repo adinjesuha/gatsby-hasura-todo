@@ -3,7 +3,7 @@ import { Router } from "@reach/router"
 import { Link } from 'gatsby'
 
 import { login, logout, isAuthenticated, getProfile } from "../utils/auth"
-import Layout from "../components/Layout"
+import Layout from "../components/layout"
 import Todos from '../components/CRUD/Todos'
 import AddTodo from '../components/CRUD/AddTodo'
 
